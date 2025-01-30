@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">Gallery</div>
+    <div class="full-img" id="fullImgBox">
+        <img src="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/01-usnpx-2025genesisgv70-angularfront-jms.jpg" onclick="openFullImg(this.src)">
+        <img src="images/5645.jpg" onclick="openFullImg(this.src)">
+        <img src="images/images (1).jpg" onclick="openFullImg(this.src)">
+        <img src="images/images (2).jpg" onclick="openFullImg(this.src)">
+        <img src="images/images (3).jpg" onclick="openFullImg(this.src)">
+        <img src="images/images (4).jpg" onclick="openFullImg(this.src)">
+        <img src="images/images.jpg" onclick="openFullImg(this.src)">
+        <img src="images/PRO_EDU_Photo_Courses_blog_article_titled_10_Car_PhotograpPhotography-Fundamentals-20241456_x_816Photography-Fundamentals-PRO-EDU_bedb8f07-1adb-4004-85b5-e0f2bf1da771.webp" onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(imgSrc) {
+            fullImgBox.style.display = "flex"; 
+            fullImg.src = imgSrc; 
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
